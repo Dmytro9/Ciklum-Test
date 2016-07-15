@@ -1,0 +1,74 @@
+// Section Special Offer from Oculus.com
+
+.oculus-special-offer
+	width: 100%
+	text-align: center
+	background: #282828
+	line-height: 1px
+
+	a
+		display: inline-block
+		width: 33.33%
+		display: inline-block
+		position: relative
+		cursor: pointer
+		text-decoration: none
+		text-transform: uppercase
+	
+	figure
+		position: relative
+		overflow: hidden
+		
+	img
+		display: block
+		width: 100%
+		height: auto
+		opacity: .3
+		-webkit-transform: scale(1)
+		-ms-transform: scale(1)
+		-o-transform: scale(1)
+		transform: scale(1)
+		-webkit-transition: all .3s ease-in-out
+		-o-transition: all .3s ease-in-out
+		transition: all .3s ease-in-out
+
+		&:hover
+			-webkit-transform: scale(1.2)
+			-ms-transform: scale(1.2)
+			-o-transform: scale(1.2)
+			transform: scale(1.2)
+			opacity: .8
+
+	figcaption
+		position: absolute
+		width: 100%
+		top: 50%
+		height: 60px
+		margin-top: -22px
+
+		line-height: 20px
+		font-family: "Oculus Sans", Arial, Helvetica, sans-serif
+		color: #a4a5a6
+		font-size: 12px
+		letter-spacing: 1px
+		font-weight: 600
+	
+	.align-fig
+		margin-top: -45px
+
+	strong
+			font-size: 22px
+			font-weight: 600
+			line-height: 28px
+			color: #fff
+			text-transform: none
+
+
+@media only screen and (max-width: 768px)
+
+	.oculus-special-offer
+		a
+			display: block
+			width: 100%
+
+			

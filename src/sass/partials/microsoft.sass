@@ -1,0 +1,389 @@
+// Header from Microsoft.com 
+
+.microsoft-header
+	margin: 0 auto
+	max-width: 1240px
+	padding: 0 40px
+	height: 48px
+	box-sizing: border-box
+	font-family: 'Segoe UI', Arial, sans-serif
+	font-size: 15px
+	min-width: 320px
+
+	
+// Block LOGO
+.microsoft-header-logo
+	height: 48px
+	width: 108px
+	float: left
+	a
+		display: block
+		padding-top: 13px
+
+	img
+		width: 108px
+		height: 23px
+		display: block
+
+
+// Block NAVIGATION
+.microsoft-header-nav
+	float: left
+	height: 48px
+	margin-left: 18px
+
+	.enter-nav
+		display: none
+
+.main-nav > li
+	display: inline-block
+	position: relative
+	line-height: 48px
+	height: 48px
+
+.main-nav a
+	display: block
+	padding: 0 20px
+	color: #2f2f2f
+	text-decoration: none
+	cursor: default
+	transition: background ease-out .5s
+
+	&:hover
+		background: #F1F1F1
+
+.active
+	background: #F1F1F1!important
+
+.main-nav > li > a
+	height: 48px
+	cursor: pointer
+
+.main-nav .ion-chevron-down
+	font-size: 8px
+
+.main-nav .sub-nav
+	position: absolute
+	width: 236px
+	display: none
+	background: #F1F1F1
+	border-left: 1px solid #E6E6E6
+	border-right: 1px solid #E6E6E6
+	border-bottom: 1px solid #AAAAAA
+	padding-bottom: 7px
+
+	a
+		padding: 16px 20px
+		color: #2f2f2f
+		line-height: 20px
+
+.sub-nav .ion-chevron-down
+	display: none
+
+.sub-nav a:hover
+	background: #E5E5E5
+
+.sub-nav .ion-chevron-right
+	font-size: 8px
+	position: relative
+	top: -1px
+	float: right
+	margin-right: 5px
+
+.js-first-opened .sub-sub-nav
+	height: 424px
+
+.sub-sub-nav
+	background: #E5E5E5
+	position: absolute
+	top: 0
+	left: 236px
+	width: 285px
+	box-sizing: border-box
+	display: none
+	border-right: 1px solid #CAC9C9
+	border-bottom: 1px solid #AAAAAA
+	padding-bottom: 7px
+	min-height: 360px
+
+.sub-sub-nav.height
+	height: 421px
+
+.sub-sub-nav a:hover
+	background: #D9D9D9
+	text-decoration: underline
+	cursor: pointer	
+
+.sub-nav > li:hover .sub-sub-nav
+	display: block
+
+.underpoint:hover
+	cursor: pointer
+	text-decoration: underline
+
+
+// Block Registration 
+.enter
+	float: right
+	height: 48px
+	
+	a
+		display: block
+		line-height: 48px
+		text-decoration: none
+		padding: 0 12px
+		font-size: 12px
+		color: #2f2f2f
+
+		&:visited
+			color: #2f2f2f
+
+		&:hover
+			background: #F1F1F1
+			color: #0078d7
+
+
+// Block PURCHASING
+.cart
+	float: right
+	height: 48px
+	
+	a
+		display: block
+		height: 48px
+		line-height: 48px
+		text-decoration: none
+		color: #2f2f2f
+
+	a:hover
+			background: #F1F1F1
+
+	span
+		font-size: 12px
+		vertical-align: top
+		padding: 0 12px
+			
+	.ion-ios-cart-outline
+		font-size: 20px
+
+
+// Block SEARCHING
+.search
+	float: right
+	height: 48px
+	margin-right: 6px
+
+	.input
+		margin-top: 6px
+		font-size: 15px
+		font-family: 'Segoe UI', Arial, sans-serif
+		padding: 6px 30px 6px 7px
+		width: 228px
+
+		&::-moz-placeholder
+			color: #2f2f2f
+		&:-ms-input-placeholder
+			color: #2f2f2f
+		&::-webkit-input-placeholder
+			color: #2f2f2f
+		&[placeholder] 
+			color: #2f2f2f
+			outline: none
+
+	.submit
+		outline: none
+		background-color: transparent
+		margin-left: -40px
+		border: none
+		cursor: pointer
+		transform: rotate(90deg)
+		width: 36px
+		padding: 5px
+
+		.ion-ios-search
+			font-size: 20px
+	
+		&:hover
+			color: #0072C6
+
+.search-form-toggle
+	display: none
+
+// Block Gamburger Menu Toggle Button
+.gamburger-toggle-nav
+	float: right
+	height: 48px
+	color: #7F7F7F
+	display: none
+	
+	span
+		line-height: 48px
+		padding: 0 14px
+		
+		.ion-navicon
+			font-size: 31px
+			font-weight: 100
+
+.gamburger-toggle-nav:hover
+	background: #F1F1F1
+	cursor: pointer		
+	
+
+	// Block SEARCH FORM TOGGLE MOBILE
+@media only screen and (max-width:1080px)
+	
+	.input
+		display: none	
+
+	.search .submit .ion-ios-search
+		font-size: 26px
+		padding-top: 8px
+			
+	.search .submit
+		display: block
+		height: 100%
+		width: 48px
+		padding: 10px
+		position: relative
+		left: 6px
+	
+	.submit:hover 
+		background: #F1F1F1
+		color: #7f7f7f
+
+	.submit:hover .ion-ios-search
+		color: #7f7f7f
+
+	.cart a:hover:not(i)
+		color: #1570a6
+
+	.search-form-toggle
+		max-width: 1080px
+		margin: 0 40px
+		background: #f2f2f2
+		text-align: center
+		min-width: 320px
+		box-sizing: border-box
+		padding: 24px 0
+		
+		.search-toggle
+			display: block
+			margin: 0 auto
+
+			.input-toggle
+				vertical-align: top
+				display: inline-block
+				width: 70%
+				font-size: 15px
+				font-family: 'Segoe UI', Arial, sans-serif
+				padding: 4px 40px 4px 7px
+				border: none
+
+				&::-moz-placeholder
+					color: #2f2f2f
+				&:-ms-input-placeholder
+					color: #2f2f2f
+				&::-webkit-input-placeholder
+					color: #2f2f2f
+				&[placeholder] 
+					color: #2f2f2f
+					outline: none
+
+			.submit-toggle
+				vertical-align: top
+				display: inline	
+				height: 28px
+				width: 28px
+				box-sizing: border-box
+				margin-left: -31px
+				transform: rotate(90deg)
+				outline: none
+				background: #0078D7
+				border: none
+				cursor: pointer
+				
+				&:hover
+					background: #0060ac
+
+			.ion-ios-search.toggle
+				font-size: 20px
+				color: #fff
+				
+
+// Mobile Menu
+@media only screen and (max-width:900px)
+
+	.microsoft-header
+		padding: 0 0 0 7px
+
+	.microsoft-header-nav
+		position: absolute
+		right: 0
+		top: 48px
+		height: 600px
+		background: #F2F2F2
+		margin-left: 0
+		display: none
+
+	.ion-chevron-right
+		display: none
+
+	.sub-nav .ion-chevron-down
+		display: block
+
+	.main-nav > li
+		display: block
+		width: 320px
+
+	.main-nav > li > a:hover
+		background: #e5e5e5
+
+
+	.main-nav .sub-nav 
+		width: 320px
+		position: relative
+		z-index: 9999
+
+	.main-nav .sub-nav > li
+		position: relative
+	
+	.main-nav .ion-chevron-down
+		float: right
+	
+	.sub-sub-nav
+		left: 0
+		width: 320px
+		z-index: 9999
+		margin-top: 52px
+
+	.sub-sub-nav > li 
+		position: relative
+		left: 0
+
+	.sub-nav > li:hover .sub-sub-nav
+		display: none	
+	
+	.open-point
+		background: #ccc
+
+	.gamburger-toggle-nav
+		display: block
+
+
+// Hide Block Registration
+@media only screen and (max-width: 570px)
+	.enter
+		display: none
+	
+	.main-nav .enter-nav
+		display: block
+
+
+@media only screen and (max-width:400px)
+	
+	.microsoft-header-nav
+		box-sizing: border-box
+		width: 320px
+
+	.search-form-toggle
+		margin: 0			
